@@ -24,6 +24,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -482,7 +483,7 @@ a {
   margin-top: 20px;
 }
 
-.footer-subscribe input[type='email'] {
+.footer-subscribe input[type='emai-subscribe'] {
   width: 360px;
   height: 50px;
   padding-left: 16px;
@@ -504,7 +505,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-button[type='submit'] {
+.submit-subscribe {
   width: 200px;
   height: 50px;
   padding: 0;
@@ -524,9 +525,16 @@ button[type='submit'] {
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color var(--trans-duration) var(--timing-func);
 }
-.subscribe-text {
+
+.submit-subscribe:hover,
+.submit-subscribe:focus {
+  background-color: #188ce8;
 }
+
 .icon-send {
   margin-top: 13px;
   margin-bottom: 13px;
@@ -699,7 +707,9 @@ button[type='submit'] {
   transform: translate(-50%, -50%) scale(1);
 
   width: 528px;
-  height: 581px;
+  /* height: 581px; */
+
+  padding: 40px;
 
   background-color: var(--secondary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -727,4 +737,115 @@ button[type='submit'] {
 .icon-close:hover,
 .icon-close:focus {
   fill: var(--accent-color);
+}
+
+h4 {
+  margin-bottom: 2px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+
+  color: var(--title-color);
+}
+
+.modal-form {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+input[type='text']:focus-within,
+input[type='tel']:focus-within,
+input[type='email']:focus-within,
+textarea:focus-within {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+input[type='text']:focus-within .form-icon,
+input[type='tel']:focus-within .form-icon,
+input[type='email']:focus-within .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-field label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.form-field input {
+  position: relative;
+  min-height: 40px;
+}
+.form-icon {
+  position: absolute;
+  fill: var(--title-color);
+}
+
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+input[type='checkbox'] {
+  margin-right: 8px;
+}
+
+.checkbox label {
+  margin-left: 0;
+}
+
+.checkbox-link {
+  font-weight: 400;
+  color: var(--accent-color);
+}
+
+.submit-modal {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-color);
+  background: var(--accent-color);
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color var(--trans-duration) var(--timing-func);
+}
+
+.submit-modal:hover,
+.submit-modal:focus {
+  background-color: #188ce8;
 }

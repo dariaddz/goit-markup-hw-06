@@ -130,7 +130,7 @@
             <li class="activities-photo">
               <img class="picture" src="images/box1.jpg" alt="работа за компьютером" width="370" />
               <h3 class="activities-header">Десктопные приложения</h3>
-                        </li>
+            </li>
             <li class="activities-photo">
               <img
                 class="picture"
@@ -387,7 +387,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social">                     
+        <div class="footer-social">
           <h3 class="uppercase-header social-header">Присоединяйтесь</h3>
           <ul class="social-links footer-links">
             <li class="soc-link-list">
@@ -426,37 +426,77 @@
 
         <div class="subscribe">
           <h3 class="uppercase-header social-header">Подпишитесь на рассылку</h3>
-        <div class="footer-subscribe">
-          <input type="email" name="email" id="email" placeholder="E-mail">
-          <label for="email"></label>
-        </div>
-        
-          <button type="submit">
+          <div class="footer-subscribe">
+            <input type="email" name="emai-subscribe" id="emai-subscribe" placeholder="E-mail" />
+            <label for="emai-subscribe"></label>
+          </div>
+
+          <button type="submit" class="submit-subscribe">
             <span class="subscribe-text">Подписаться</span>
             <svg class="icon-send" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-send">
-                              </use>
+              <use href="./images/symbol-defs.svg#icon-send"></use>
             </svg>
           </button>
         </div>
       </div>
     </footer>
 
-<div data-modal class="backdrop is-hidden">
-  <div class="modal">
-    <button data-modal-close class="icon-close" type="button">
-      <svg width="11" height="11">
-        <use href="./images/symbol-defs.svg#icon-close"></use>
-      </svg>
-    </button>
+    <!-- Модальное окно -->
 
-    </svg>
-  </div>
- 
-</div>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="icon-close" type="button">
+          <svg width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <h4 class="modal-header">Оставьте свои данные, мы вам перезвоним</h4>
+
+        <form class="modal-form">
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-person-black"></use>
+            </svg>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="phone">Телефон</label>
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+            </svg>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="form-field">
+            <label for="email">Почта</label>
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-email-black"></use>
+            </svg>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-field">
+            <label for="comments">Комментарий</label>
+            <textarea
+              name="comments"
+              id="comments"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="checkbox-link" href="">Условия договора</a></label
+            >
+          </div>
+          <button type="submit" class="submit-modal">Отправить</button>
+        </form>
+      </div>
+    </div>
 
     <script src="./js/modal.js"></script>
-
-
   </body>
 </html>
