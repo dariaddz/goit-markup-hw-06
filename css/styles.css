@@ -434,15 +434,13 @@ a {
   color: var(--secondary-color);
 }
 
-.footer-contacts{
+.footer-contacts {
   margin-right: 70px;
 }
-
 
 .footer-address-section {
   font-style: normal;
   margin-top: 20px;
- 
 }
 
 .footer-address {
@@ -461,8 +459,7 @@ a {
   color: var(--accent-color);
 }
 
-
-.footer-social{
+.footer-social {
   margin-right: 93px;
 }
 .social-header {
@@ -480,14 +477,13 @@ a {
   fill: var(--secondary-color);
 }
 
-
-.footer-subscribe{
-display:inline-flex;
-margin-top: 20px;
+.footer-subscribe {
+  display: inline-flex;
+  margin-top: 20px;
 }
 
-.footer-subscribe input[type='email']{
-  width:360px;
+.footer-subscribe input[type='email'] {
+  width: 360px;
   height: 50px;
   padding-left: 16px;
 
@@ -497,40 +493,46 @@ margin-top: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-subscribe ::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 
-.footer-subscribe ::placeholder{
-  color:rgba(255, 255, 255, 0.6);
-
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.03em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 
-button[type="submit"]{
-  width:200px;
+button[type='submit'] {
+  width: 200px;
   height: 50px;
-  padding:0;
-  padding-left: 29px;
-text-align: start;
+  padding: 0;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  display: inline-flex;
+  align-items: center;
 
   font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 
-color: var(--secondary-color);
-background: var(--accent-color);
-border-color: transparent;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+  color: var(--secondary-color);
+  background: var(--accent-color);
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.subscribe-text {
+}
+.icon-send {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 10px;
 }
 
-/* button[type="submit"]::after{
-url('../image')
-} */
 /* портфолио фильтры */
 
 .filter {
