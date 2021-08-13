@@ -841,9 +841,15 @@ input[type='checkbox'] {
 
 .checkbox-icon {
   display: inline-block;
-  width: 15px;
-  height: 16px;
-  background-color: red;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
+}
+
+input[type='checkbox']:checked + .checkbox-icon {
+  background-color: var(--accent-color);
 }
 
 /* кнопка отправки модального окна */
