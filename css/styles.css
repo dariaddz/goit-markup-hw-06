@@ -774,6 +774,7 @@ input[type='email'],
 textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border var(--trans-duration) var(--timing-func);
 }
 
 input[type='text']:focus-within,
@@ -782,6 +783,10 @@ input[type='email']:focus-within,
 textarea:focus-within {
   border: 1px solid var(--accent-color);
   outline: none;
+}
+
+.form-icon {
+  transition: fill var(--trans-duration) var(--timing-func);
 }
 
 input[type='text']:focus-within ~ .form-icon,
