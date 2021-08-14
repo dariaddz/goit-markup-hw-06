@@ -712,7 +712,6 @@ input[type='email-subscribe']::placeholder {
   transform: translate(-50%, -50%) scale(1);
 
   width: 528px;
-  /* height: 581px; */
 
   padding: 40px;
 
@@ -823,6 +822,7 @@ textarea::placeholder {
 }
 
 .checkbox {
+  display: flex;
   margin-top: 20px;
   margin-bottom: 30px;
   font-weight: 400;
@@ -834,6 +834,7 @@ input[type='checkbox'] {
 }
 
 .checkbox-link {
+  margin-right: 2px;
   color: var(--accent-color);
 }
 
@@ -843,13 +844,24 @@ input[type='checkbox'] {
   display: inline-block;
   width: 16px;
   height: 15px;
+  margin-right: 7px;
 
   border: 2px solid var(--title-color);
   border-radius: 2px;
 }
 
+.check {
+  padding-right: 3px;
+  padding-bottom: 2px;
+}
 input[type='checkbox']:checked + .checkbox-icon {
+  margin-right: 7px;
+
   background-color: var(--accent-color);
+
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+  background-origin: border-box;
 }
 
 /* кнопка отправки модального окна */
