@@ -486,7 +486,7 @@ a {
 .subscribe > h3 {
   margin-bottom: 20px;
 }
-input[type='email-subscribe'] {
+.email-subscribe {
   width: 360px;
   height: 50px;
   padding-left: 16px;
@@ -497,7 +497,7 @@ input[type='email-subscribe'] {
   color: rgba(255, 255, 255, 0.6);
 }
 
-input[type='email-subscribe']::placeholder {
+.email-subscribe::placeholder {
   color: rgba(255, 255, 255, 0.6);
 
   font-family: Roboto;
@@ -768,19 +768,15 @@ h4 {
   flex-direction: column;
 }
 
-input[type='text'],
-input[type='tel'],
-input[type='email'],
-textarea {
+.modal-form input,
+.modal-form textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border var(--trans-duration) var(--timing-func);
 }
 
-input[type='text']:focus-within,
-input[type='tel']:focus-within,
-input[type='email']:focus-within,
-textarea:focus-within {
+.modal-form input:focus-within,
+.modal-form textarea:focus-within {
   border: 1px solid var(--accent-color);
   outline: none;
 }
