@@ -426,16 +426,18 @@
 
         <div class="subscribe">
           <h3 class="uppercase-header social-header">Подпишитесь на рассылку</h3>
-          <label class="email-subscribe">
-            <input type="email-subscribe" name="email-subscribe" placeholder="E-mail" />
-          </label>
+          <form class="subscribe-form">
+            <label class="email-subscribe">
+              <input type="email-subscribe" name="email-subscribe" placeholder="E-mail" />
+            </label>
 
-          <button type="submit" class="submit-subscribe">
-            <span class="subscribe-text">Подписаться</span>
-            <svg class="icon-send" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-send"></use>
-            </svg>
-          </button>
+            <button type="submit" class="submit-subscribe">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -489,13 +491,8 @@
 
           <label class="checkbox">
             <input class="visually-hidden" type="checkbox" name="checkbox" />
-            <span class="checkbox-icon">
-              <svg class="check" width="16" height="15">
-                <use href="./images/symbol-defs.svg#icon-check"></use>
-              </svg>
-            </span>
-            Соглашаюсь с рассылкой и принимаю
-            <a class="checkbox-link" href="">Условия договора</a>
+            <span class="checkbox-icon"></span>
+            Соглашаюсь с рассылкой и принимаю<a class="checkbox-link" href="">Условия договора</a>
           </label>
           <button type="submit" class="submit-modal">Отправить</button>
         </form>
